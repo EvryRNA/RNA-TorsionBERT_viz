@@ -26,12 +26,25 @@ The data are organized as follows:
 To visualise the torsional distribution of the angles over the pre-training, training, validation and test sets, you can run the following command line:
 
 ```bash
-TO DO
+make plot_data:
+```
+or 
+```bash
+python -m src.viz_cli --method="data"
 ```
 
 It will give you the following visualisation:
 
 ![](img/polar_distribution.png)
+
+To get information about the dataset sequences, you can use:
+```bash
+make plot_stats
+```
+or 
+```bash
+python -m src.viz_cli --method="stats"
+```
 
 
 ### RNA-TorsionBERT visualisation
@@ -39,7 +52,11 @@ It will give you the following visualisation:
 To visualise the different performances of the `RNA-TorsionBERT` model, you can use: 
 
 ```bash
-
+make plot_model
+```
+or 
+```bash
+python -m src.viz_cli --method="model"
 ```
 
 It will give you the following results:
@@ -54,7 +71,11 @@ Distribution of MAE             |  Mean MAE per RNA length
 To visualise the averaged `ES` and `PCC` between **scoring functions** and **metrics** over the three decoy test sets, you can run the following command line:
 
 ```bash
-TO DO
+make plot_decoys
+```
+or 
+```bash
+python -m src.viz_cli --method="decoys"
 ```
 It will give you the following results:
 
@@ -62,12 +83,7 @@ ES heatmap scoring functions             |  PCC heatmap scoring functions
 :-------------------------:|:-------------------------:
 ![](img/heatmap_energies_all_ES.png)  |  ![](img/heatmap_energies_all_PCC.png)
 
-To visualise the averaged `ES` and `PCC` between **scoring functions** and **metrics** over the three decoy test sets, you can run the following command line:
-
-```bash
-TO DO
-```
-It will give you the following results:
+It will also give the `ES` and `PCC` between **metrics** over the three decoy test sets:
 
 ES heatmap metrics             |  PCC heatmap metrics
 :-------------------------:|:-------------------------:
