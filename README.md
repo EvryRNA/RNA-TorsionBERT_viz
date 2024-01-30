@@ -21,9 +21,37 @@ The data are organized as follows:
 
 ## Usage
 
+### Data visualisation 
+
+To visualise the torsional distribution of the angles over the pre-training, training, validation and test sets, you can run the following command line:
+
+```bash
+TO DO
+```
+
+It will give you the following visualisation:
+
+![](img/polar_distribution.png)
+
+
+### RNA-TorsionBERT visualisation
+
+To visualise the different performances of the `RNA-TorsionBERT` model, you can use: 
+
+```bash
+
+```
+
+It will give you the following results:
+
+Distribution of MAE             |  Mean MAE per RNA length
+:-------------------------:|:-------------------------:
+![](img/mae_distribution_all_test.png)  |  ![](img/len_plot.png)
+
+
 ### Decoys visualisation
 
-To visualise the averaged `ES` and `PCC` over the three decoy test sets, you can run the following command line:
+To visualise the averaged `ES` and `PCC` between **scoring functions** and **metrics** over the three decoy test sets, you can run the following command line:
 
 ```bash
 TO DO
@@ -34,7 +62,16 @@ ES heatmap scoring functions             |  PCC heatmap scoring functions
 :-------------------------:|:-------------------------:
 ![](img/heatmap_energies_all_ES.png)  |  ![](img/heatmap_energies_all_PCC.png)
 
+To visualise the averaged `ES` and `PCC` between **scoring functions** and **metrics** over the three decoy test sets, you can run the following command line:
 
+```bash
+TO DO
+```
+It will give you the following results:
+
+ES heatmap metrics             |  PCC heatmap metrics
+:-------------------------:|:-------------------------:
+![](img/heatmap_metrics_all_ES.png)  |  ![](img/heatmap_metrics_all_PCC.png)
 
 ## Citation
 
