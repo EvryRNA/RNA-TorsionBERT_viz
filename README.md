@@ -10,6 +10,16 @@ You just need to install the requirements using the following command line:
 pip install -r requirements.txt 
 ```
 
+You can also run it inside a `Docker` using:
+```bash
+make docker_run
+```
+or 
+```bash
+docker build -t rna_torsionbert_viz .
+docker run -it -v ${PWD}/data:/app/data -v ${PWD}/img:/app/img rna_torsionbert_viz
+```
+
 ## Data
 
 We only provide the data in forms of torsional angles. The conversion from `.pdb` files to angles was done using this [DSSR fork](https://github.com/EvryRNA/rna_angles_prediction_dssr).
